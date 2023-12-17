@@ -1,22 +1,13 @@
 /* The font vlw file can be converted to a byte array using:
-
    https://tomeko.net/online_tools/file_to_hex.php?lang=en
-
    Paste the byte array into a sketch tab and add two lines
    at the start with a unique font name:
-
                 const uint8_t  fontName[] PROGMEM = {
-
-   At the end add:
-
+                -------At the end add:
         };
-
    See example below. Include the tab in the main sketch, e.g.:
-
         #include "NotoSansBold36.h"
 */
-
-
 const uint8_t  NotoSansBold36[] PROGMEM = {
 0x00, 0x00, 0x00, 0x5E, 0x00, 0x00, 0x00, 0x0B, 0x00, 0x00, 0x00, 0x24, 0x00, 0x00, 0x00, 0x00, 
 0x00, 0x00, 0x00, 0x1C, 0x00, 0x00, 0x00, 0x09, 0x00, 0x00, 0x00, 0x21, 0x00, 0x00, 0x00, 0x1B, 

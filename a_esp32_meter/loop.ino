@@ -1,7 +1,6 @@
 void loop() {
   potValue = analogRead(adcPin);
-   
-  if(potValue>1000 && trigger == false ){
+  if(potValue>1000 && trigger == false){
     EEPROM.write(6, 0);
     Serial.println("Pulse UP");
     Serial.println(potValue);
@@ -25,9 +24,9 @@ void loop() {
     Serial.println("Pulse DOWN");
     Serial.println(potValue);
     trigger = false;
-
     display_meter_value();
     String httpRequestData = "api_key=" + apiKey + "&field1=" + String(read_meter())+ "&field2=0"+ "&field3=" + String(water_area()); 
     post_data(httpRequestData);
   }
+  yield();
 }

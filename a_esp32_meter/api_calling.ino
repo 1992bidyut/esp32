@@ -1,3 +1,8 @@
+const char* serverName = "http://api.thingspeak.com/update";
+String apiKey = "JKAYNH65NV6F2HNP";
+unsigned long lastTime = 0;
+unsigned long timerDelay = 10000;
+
 void post_data(String httpRequestData){
   //Check WiFi connection status
     if(WiFi.status()== WL_CONNECTED){
@@ -7,9 +12,6 @@ void post_data(String httpRequestData){
       http.begin(client, serverName);
       // Specify content-type header
       http.addHeader("Content-Type", "application/x-www-form-urlencoded");
-      // Data to send with HTTP POST
-                
-      // Send HTTP POST request
       int httpResponseCode = http.POST(httpRequestData);
       Serial.print("HTTP Response code: ");
       Serial.println(httpResponseCode);
@@ -19,4 +21,5 @@ void post_data(String httpRequestData){
     else {
       Serial.println("WiFi Disconnected");
     }
+    yield();
 }

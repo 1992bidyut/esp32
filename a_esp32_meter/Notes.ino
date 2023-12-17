@@ -4,7 +4,6 @@ Information notes only:
 ======================
 
 //These are the text plotting alignment (reference datum point)
-
 TL_DATUM = Top left (default)
 TC_DATUM = Top centre
 TR_DATUM = Top right
@@ -22,7 +21,6 @@ C_BASELINE = Centre character baseline
 R_BASELINE = Right character baseline
 
 // Basic colours already defined:
-
 TFT_BLACK       0x0000
 TFT_NAVY        0x000F
 TFT_DARKGREEN   0x03E0
@@ -42,15 +40,4 @@ TFT_WHITE       0xFFFF
 TFT_ORANGE      0xFDA0
 TFT_GREENYELLOW 0xB7E0
 TFT_PINK        0xFC9F
-
-
-
-
-
-
-
-
-
-
- 
  */

@@ -5,7 +5,7 @@ uint32_t icount = 0;
 //####################################################################################################
 void show_divine_logo() {
   tft.setRotation(0);  // portrait
-  tft.fillScreen(TFT_WHITE);
+  tft.fillScreen(TFT_BLACK);
   drawArrayJpeg(DivineLogo, sizeof(DivineLogo), 6, 18); // Draw a jpeg image stored in memory
 }
 
@@ -21,7 +21,7 @@ void drawArrayJpeg(const uint8_t arrayname[], uint32_t array_size, int xpos, int
   int x = xpos;
   int y = ypos;
   JpegDec.decodeArray(arrayname, array_size);
-  jpegInfo(); // Print information from the JPEG file (could comment this line out)
+  // jpegInfo(); // Print information from the JPEG file (could comment this line out)
   renderJPEG(x, y);
   Serial.println("#########################");
 }

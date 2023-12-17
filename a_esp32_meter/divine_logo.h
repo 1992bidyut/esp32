@@ -1,7 +1,8 @@
-// convert jpeg to c code bu terminal: xxd -i Divine_IT_Limited_icon.jpeg> output.h
+// convert jpeg to c code bu terminal:>> xxd -i Divine_IT_Limited_icon.jpeg> output.h
 // must need to be jpeg formate
 // ratio acording to the display size
 // compress to smalest size
+// change the data type to uint8_t and set data as PROGMEM
 
 const uint8_t DivineLogo[] PROGMEM = {
   0xff, 0xd8, 0xff, 0xe0, 0x00, 0x10, 0x4a, 0x46, 0x49, 0x46, 0x00, 0x01,

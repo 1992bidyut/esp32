@@ -9,5 +9,7 @@ void setup(void) {
   delay(2000);
   connect_wifi();
   delay(5000);
+  run_server();
   display_meter_value();
+  yield();
 }
