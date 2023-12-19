@@ -6,5 +6,5 @@ TFT_eSPI tft = TFT_eSPI();
 #define AA_FONT_SMALL NotoSansBold15
 #define AA_FONT_LARGE NotoSansBold36
 
-#define THEME_BACKGROUND 0x6027
+#define THEME_BACKGROUND 0x86EE      /* 135, 206, 235 */
 #define THEME_METER 0x6027

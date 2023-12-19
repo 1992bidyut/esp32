@@ -7,9 +7,11 @@ void setup(void) {
   delay(2000);
   show_wasa_logo();
   delay(2000);
-  connect_wifi();
-  delay(5000);
-  run_server();
+  create_ap();
+  if(EEPROM.read(10) == 44){
+    connect_wifi();
+  }
   display_meter_value();
+  run_server();
   yield();
 }

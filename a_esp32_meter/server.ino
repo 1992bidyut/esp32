@@ -1,7 +1,14 @@
 void run_server(){
   // Route for root / web page
   indexView();
-  onConfigGet();
+ 
+  wifiConfigView();
+  onWifiConfigGet();
+
+  meterConfigView();
+  onMeterConfigGet();
+  getMeterReadingView();
+
   // Start server
   server.begin();
   yield();

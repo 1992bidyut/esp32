@@ -17,10 +17,12 @@
 #include <JPEGDecoder.h>
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
+#include <ArduinoJson.h>
 const int adcPin = 34;       // Pin for the ADC input
 bool trigger = true;
 int potValue = 0;
 int small_value = 0;
 AsyncWebServer server(80);
+
 
 
